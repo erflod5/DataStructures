@@ -4,7 +4,7 @@
   "description": "Data structures in Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "tsc": "tsc",
     "dev": "nodemon",
     "prod": "tsc && node ./build/index.js",
@@ -21,8 +21,13 @@
   },
   "homepage": "https://github.com/erflod5/DataStructures#readme",
   "devDependencies": {
+    "@types/jest": "^25.2.3",
     "nodemon": "^2.0.4",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.3",
+    "@types/node": "^14.0.4"
+
+  },
+  "dependencies": {
   }
 }
