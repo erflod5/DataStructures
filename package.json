@@ -1,0 +1,28 @@
+{
+  "name": "datastructures",
+  "version": "1.0.0",
+  "description": "Data structures in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "nodemon",
+    "prod": "tsc && node ./build/index.js",
+    "ts:node": "ts-node src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erflod5/DataStructures.git"
+  },
+  "author": "Erik Flores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erflod5/DataStructures/issues"
+  },
+  "homepage": "https://github.com/erflod5/DataStructures#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3"
+  }
+}
