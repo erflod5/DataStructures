@@ -30,6 +30,35 @@ export class LinkedList<T>{
         this.tail = newNode;
     }
 
+    public deleteTail() : Node<T> | null{
+        const deletedNode = this.tail;
+        if(this.head === this.tail){
+            this.head = this.tail = null;
+            return deletedNode;
+        }
+
+        let currentNode = this.head, previousNode = this.head;
+        while(currentNode?.getNext()){
+            currentNode = currentNode.getNext();
+            if(!currentNode?.getNext()){
+                previousNode?.setNext(null);
+                break;
+            }
+            previousNode = currentNode;
+        }
+        this.tail = previousNode;
+        return deletedNode;
+    }
+
+    public deleteHead() : Node<T> | null{
+        if(this.isEmpty()){
+            return null;
+        }
+        const deletedNode = this.head;
+        this.head = this.head?.getNext() ? this.head.getNext() : this.tail = null;
+        return deletedNode;
+    }
+
     public displayList(){
         let currentNode = this.head;
         while(currentNode != null){
