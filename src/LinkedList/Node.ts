@@ -15,7 +15,7 @@ export class Node<T>{
         return this.value;
     }
 
-    public setNext(next : Node<T>){
+    public setNext(next : Node<T> | null){
         this.next = next;
     }
 
