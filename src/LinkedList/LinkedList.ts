@@ -4,9 +4,9 @@ export class LinkedList<T>{
     private head : Node<T> | null;
     private tail : Node<T> | null;
 
-    constructor(){
-        this.head = this.tail = null;
-    }
+        constructor(){
+            this.head = this.tail = null;
+        }
 
     public isEmpty() : boolean{
         return this.head === null;
