@@ -1,12 +1,10 @@
 export class Node<T>{
     private value: T;
     private next : Node<T> | null;
-    private index : number;
 
-    constructor(value : T, next : Node<T> | null, index : number){
+    constructor(value : T, next : Node<T> | null){
         this.value = value;
         this.next = next;
-        this.index = index;
     }
 
     public setValue(value : T){
@@ -23,10 +21,6 @@ export class Node<T>{
 
     public getNext() : Node<T> | null{
         return this.next;
-    }
-
-    public getIndex() : number{
-        return this.index;
     }
 
     public toString(){

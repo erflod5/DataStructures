@@ -16,4 +16,6 @@ queue.enqueue({value : 4, name : 'Diaz'});
 
 queue.displayQueue();
 console.log(queue.dequeue());
+console.log(queue.dequeue());
+console.log(queue.peek());
 queue.displayQueue();
