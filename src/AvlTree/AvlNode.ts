@@ -43,7 +43,7 @@ export class AvlNode<T>{
     }
 
     nodeValue(): T { return this.value; }
-    nodeProperty(): any { return JSON.parse(JSON.stringify(this.value))[this.property]; };
+    nodeKeyValue(): any { return JSON.parse(JSON.stringify(this.value))[this.property]; };
     subLeft(): AvlNode<T> | null { return this.left; }
     subRight(): AvlNode<T> | null { return this.right; }
     newValue(value: T): void { this.value = value; }
@@ -51,5 +51,7 @@ export class AvlNode<T>{
     rightBranch(right: AvlNode<T> | null): void { this.right = right; }
     setFactor(b_factor: number): void { this.b_factor = b_factor; }
     getFactor(): number { return this.b_factor; }
-
+    addQ(quantity: number){ this.quantity+= quantity; }
+    sustractQ(quantity: number){ this.quantity+= quantity; }
+    getQuantity(): number{ return this.quantity; }
 }
