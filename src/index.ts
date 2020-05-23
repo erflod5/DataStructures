@@ -1,4 +1,5 @@
 import {LinkedList} from './LinkedList/LinkedList';
+import {Queue} from './Queue/Queue';
 
 import {AvlTree} from './AvlTree/AvlTree';
 
@@ -47,3 +48,19 @@ console.log("\nAvlTree Preorder: ");
 avlstr.displayPreorder();
 console.log("\nAvlTree Postorder: ");
 avlstr.displayPostorder();
+console.log('Deleted: ', list.deleteTail());
+console.log('Deleted: ', list.deleteTail());
+console.log('Deleted: ', list.deleteHead());
+list.displayList();
+
+let queue = new Queue();
+queue.enqueue({value : 1, name : 'Erik'});
+queue.enqueue({value : 2, name : 'Gerardo'});
+queue.enqueue({value : 3, name : 'Flores'});
+queue.enqueue({value : 4, name : 'Diaz'});
+
+queue.displayQueue();
+console.log(queue.dequeue());
+console.log(queue.dequeue());
+console.log(queue.peek());
+queue.displayQueue();
