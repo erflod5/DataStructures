@@ -1,18 +1,21 @@
 import { MatrixHeadboard } from './MatrixHeadBoard';
 
 export class MatrixNode<T>{
-    private value: T;
-    private next : MatrixNode<T> | null;
-    private up : MatrixNode<T> | null;
-    private down : MatrixNode<T> | null;
-    private left : MatrixNode<T> | null;
-    private right : MatrixNode<T> | null;
-    private Xaxis:MatrixHeadboard<T> | null;
-    private Yaxis:MatrixHeadboard<T> | null;
+    public value: T;
+    public next : MatrixNode<T> | null;
+    public up : MatrixNode<T> | null;
+    public down : MatrixNode<T> | null;
+    public left : MatrixNode<T> | null;
+    public right : MatrixNode<T> | null;
+    public Xaxis:MatrixHeadboard<T> | null;
+    public Yaxis:MatrixHeadboard<T> | null;
+    public x:number;
+    public y:number;
 
-    constructor(value : T, next : MatrixNode<T> | null){
+    constructor(value : T, x: number, y:number){
         this.value = value;
-        this.next = next;
-        this.up = this.down = this.left = this.right = this.Xaxis = this.Yaxis = null;
+        this.x =x;
+        this.y = y;
+        this.next = this.up = this.down = this.left = this.right = this.Xaxis = this.Yaxis = null;
     }
 }
