@@ -2,6 +2,7 @@ import {LinkedList} from './LinkedList/LinkedList';
 import {Queue} from './Queue/Queue';
 
 import {AvlTree} from './AvlTree/AvlTree';
+import { SparseMatrix } from './SparseMatrix/SparseMatrix';
 
 console.log("LinkedList");
 let list = new LinkedList();
@@ -64,3 +65,13 @@ console.log(queue.dequeue());
 console.log(queue.dequeue());
 console.log(queue.peek());
 queue.displayQueue();
+
+
+
+console.log("\n\nSparse Matrix\n");
+let matrix = new SparseMatrix();
+matrix.insertValue(2,1,{value : 1, name : 'Diego'});
+matrix.insertValue(4,4,{value : 2, name : 'Estuardo'});
+matrix.insertValue(1,4,{value : 3, name : 'Gomez'});
+matrix.insertValue(5,1,{value : 4, name : 'Fernandez'});
+matrix.displayMatrix();
